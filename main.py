@@ -71,6 +71,7 @@ class Canvas(tk.Canvas):
                 self.delete(point_id)
                 self.point_ids.pop(i)
                 break
+        self.update_interpolation()
     
     def key_press(self, event):
         if event.char == 'c':
